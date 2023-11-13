@@ -27,12 +27,8 @@ public class ChooseDestinationState implements State {
             boolean exit = false;
 
             switch (line) {
-                case "1":
+                case "1", "2", "3":
                     taxiSimulator.setState(this.taxiSimulator.getChooseTaxiState());
-                    exit = true;
-                    break;
-                case "2":
-                    taxiSimulator.getChooseTaxiState().handle();
                     exit = true;
                     break;
                 case "4":
